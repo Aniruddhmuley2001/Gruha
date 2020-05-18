@@ -6,4 +6,7 @@ function myFunction() {
     } else {
       x.className = "topnav";
     }
-  }
+}
+
+const price = document.getElementsByTagName("input");
+console.log(price)
