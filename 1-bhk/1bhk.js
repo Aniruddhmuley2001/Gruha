@@ -43,7 +43,6 @@ let iterativeFunction = function (arr, x) {
 
       // Find the mid index 
       let mid=Math.floor((start + end)/2); 
-      console.log(mid);
  
       // If element is present at mid, return True 
       if (arr[mid] == x) 
@@ -65,7 +64,20 @@ function search_value() {
   let arr = [1600000, 1800000, 1900000, 2000000, 2200000]; 
   let x = price; 
   console.log(x);
-  if (iterativeFunction(arr, x, 0, arr.length-1)) 
-    console.log("Element found!"); 
+  if (iterativeFunction(arr, x, 0, arr.length-1)) {
+    //console.log("Element found!");
+    if(x == 1600000){
+      const first1bhk = document.createElement("div");
+      first1bhk.id = "first1bhk";
+      first1bhk.textContent = "this must be visible."
+      document.getElementById("property-container").appendChild(first1bhk);
+    }
+    else if(x == 1900000){
+      const first1bhk = document.createElement("div");
+      first1bhk.id = "first1bhk";
+      first1bhk.textContent = "this must be visible again."
+      document.getElementById("property-container").appendChild(first1bhk);
+    }
+  } 
   else console.log("Element not found!"); 
 }
