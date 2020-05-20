@@ -68,15 +68,17 @@ function search_value() {
     //console.log("Element found!");
     if(x == 1600000){
       const first1bhk = document.createElement("div");
-      first1bhk.id = "first1bhk";
-      first1bhk.textContent = "this must be visible."
-      document.getElementById("property-container").appendChild(first1bhk);
+      first1bhk.id = "prop-container";
+      first1bhk.insertAdjacentHTML("afterbegin", 
+      "<h2>Umiya Estate</h2> <br> <h5><strong>Carpet Area: </strong>664 sq. ft.</h5> <br> <h5><strong>Floor: </strong>3rd of 8</h5> <br> <h5><strong>Price: </strong>Rs. 16,00,000/- + GST</h5> <br> <h5><strong>EMI: </strong>Rs. 12,140(approx.)</h5> <br> <h5><strong>Address: </strong>Dindoli, Surat</h5> <br> <h5><strong>Property Age: </strong>1 year</h5> <br> <h5><strong>Furnishing: </strong>Fully furnished</h5> <br> <h5><strong>Amenities: </strong>Lift, Park, Security Personnal</h5>")
+      //document.getElementById("property-container").appendChild(first1bhk);
     }
     else if(x == 1900000){
-      const first1bhk = document.createElement("div");
-      first1bhk.id = "first1bhk";
-      first1bhk.textContent = "this must be visible again."
-      document.getElementById("property-container").appendChild(first1bhk);
+      const second1bhk = document.createElement("div");
+      second1bhk.id = "prop-container";
+      second1bhk.insertAdjacentHTML("afterbegin", 
+      "<h2>Umiya Estate</h2> <br> <h5><strong>Carpet Area: </strong>664 sq. ft.</h5> <br> <h5><strong>Floor: </strong>3rd of 8</h5> <br> <h5><strong>Price: </strong>Rs. 16,00,000/- + GST</h5> <br> <h5><strong>EMI: </strong>Rs. 12,140(approx.)</h5> <br> <h5><strong>Address: </strong>Dindoli, Surat</h5> <br> <h5><strong>Property Age: </strong>1 year</h5> <br> <h5><strong>Furnishing: </strong>Fully furnished</h5> <br> <h5><strong>Amenities: </strong>Lift, Park, Security Personnal</h5>")
+      //document.getElementById("property-container").appendChild(first1bhk);
     }
   } 
   else console.log("Element not found!"); 

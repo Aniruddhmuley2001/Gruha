@@ -69,7 +69,9 @@
     text-align: center;
 }
 
-#property-container{
+#prop-container{
     border: 2px solid rgb(211, 98, 28);
     border-radius: 8px;
+    margin: 10px;
+    padding: 1.5%;
 }
