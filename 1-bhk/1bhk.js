@@ -8,31 +8,6 @@ function myFunction() {
     }
 }
 
-// const property_1bhk = [
-//   {
-//     Name: "Green Paradise",
-//     Cost: 2000000,
-//     floor: "4 of 12",
-//     Area: "671 sq. ft.",
-//     property_age: "Under Construction",
-//     furnishing: "Unfurnished",
-//     EMI: 15279,
-//     address: "Jahangirabad, Surat",
-//     Amenities: "Parking, East-facing, Vitrified flooring, Partial power backup"
-//   },
-//   {
-//     Name: "Asopalav Apartment",
-//     Cost: 1800000,
-//     floor: "2 of 10",
-//     Area: "800 sq. ft.",
-//     property_age: "10+ years",
-//     furnishing: "Semi-furnished",
-//     EMI: 14377,
-//     address: "Tadwadi, Surat",
-//     Amenities: "Visitor Parking, Park, Lift, Piped gas"
-//   },
-// ];
-
 // Iterative function to implement Binary Search 
 let iterativeFunction = function (arr, x) { 
    
@@ -61,7 +36,7 @@ let iterativeFunction = function (arr, x) {
 // Driver code 
 function search_value() {
   const price = document.querySelector("input").value;
-  let arr = [1600000, 1800000, 1900000, 2000000, 2200000]; 
+  let arr = ['16,00,000', '18,00,000', '19,00,000', '20,00,000', '22,00,000']; 
   let x = price; 
   console.log(x);
   if (iterativeFunction(arr, x, 0, arr.length-1)) {
@@ -70,18 +45,18 @@ function search_value() {
     //This part added so that even if the first search result is not a part of data taken, we get the required result by implementing the remove and add functionality
     const first1bhk = document.createElement("div");
     first1bhk.id = "prop-container";
-    first1bhk.insertAdjacentHTML("afterbegin", "<h6>Sample Text</h6>")
+    first1bhk.insertAdjacentHTML("afterbegin", "<h6></h6>")
     document.getElementById("property-container").appendChild(first1bhk);
-    
-    if(x == 1600000){
+
+    if(x === '16,00,000'){
       document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
       const first1bhk = document.createElement("div");
       first1bhk.id = "prop-container";
       first1bhk.insertAdjacentHTML("afterbegin", 
-      "<h2>Umiya Estate</h2> <br> <h5><strong>Carpet Area: </strong>664 sq. ft.</h5> <br> <h5><strong>Floor: </strong>3rd of 8</h5> <br> <h5><strong>Price: </strong>Rs. 16,00,000/- + GST</h5> <br> <h5><strong>EMI: </strong>Rs. 12,140(approx.)</h5> <br> <h5><strong>Address: </strong>Dindoli, Surat</h5> <br> <h5><strong>Property Age: </strong>1 year</h5> <br> <h5><strong>Furnishing: </strong>Fully furnished</h5> <br> <h5><strong>Amenities: </strong>Lift, Park, Security Personnal</h5>")
+      "<h2>Umiya Estate</h2> <img src='D://Projects/Gruha/img/property1.jpg' style='display: inline-block; position: relative; width: 50%; height: 40vh; float:right'> <br> <h5><strong>Carpet Area: </strong>664 sq. ft.</h5> <br> <h5><strong>Floor: </strong>3rd of 8</h5> <br> <h5><strong>Price: </strong>Rs. 16,00,000/- + GST</h5> <br> <h5><strong>EMI: </strong>Rs. 12,140(approx.)</h5> <br> <h5><strong>Address: </strong>Dindoli, Surat</h5> <br> <h5><strong>Property Age: </strong>1 year</h5> <br> <h5><strong>Furnishing: </strong>Fully furnished</h5> <br> <h5><strong>Amenities: </strong>Lift, Park, Security Personnal</h5>")
       document.getElementById("property-container").appendChild(first1bhk);
     }
-    else if(x == 1800000){
+    else if(x == '18,00,000'){
       document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
       const second1bhk = document.createElement("div");
       second1bhk.id = "prop-container";
@@ -89,7 +64,7 @@ function search_value() {
       "<h2>Asopalav Apartments</h2> <br> <h5><strong>Carpet Area: </strong>800 sq. ft.</h5> <br> <h5><strong>Floor: </strong>2nd of 10</h5> <br> <h5><strong>Price: </strong>Rs. 18,00,000/- + GST</h5> <br> <h5><strong>EMI: </strong>Rs. 14,377(approx.)</h5> <br> <h5><strong>Address: </strong>Tadwadi, Surat</h5> <br> <h5><strong>Property Age: </strong>10+ years</h5> <br> <h5><strong>Furnishing: </strong>Semi-Furnished</h5> <br> <h5><strong>Amenities: </strong>Lift, Park, Visitor Parking, Piped Gas</h5>")
       document.getElementById("property-container").appendChild(second1bhk);
     }
-    else if(x == 1900000){
+    else if(x == '19,00,000'){
       document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
       const second1bhk = document.createElement("div");
       second1bhk.id = "prop-container";
@@ -97,7 +72,7 @@ function search_value() {
       "<h2>Sugat Residency</h2> <br> <h5><strong>Carpet Area: </strong>370 sq. ft.</h5> <br> <h5><strong>Floor: </strong>5th of 5</h5> <br> <h5><strong>Price: </strong>Rs. 19,00,000/- + GST</h5> <br> <h5><strong>EMI: </strong>Rs. 16,293(approx.)</h5> <br> <h5><strong>Address: </strong>Bhatha, Surat</h5> <br> <h5><strong>Property Age: </strong>Under Construction (Possession in Dec 2024)</h5> <br> <h5><strong>Furnishing: </strong>Unfurnished</h5> <br> <h5><strong>Amenities: </strong>Lift, CCTV Camera, RO System, Power Backup</h5>")
       document.getElementById("property-container").appendChild(second1bhk);
     }
-    else if(x == 2000000){
+    else if(x == '20,00,000'){
       document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
       const second1bhk = document.createElement("div");
       second1bhk.id = "prop-container";
@@ -105,7 +80,7 @@ function search_value() {
       "<h2>Green Paradise</h2> <br> <h5><strong>Carpet Area: </strong>671 sq. ft.</h5> <br> <h5><strong>Floor: </strong>4th of 12</h5> <br> <h5><strong>Price: </strong>Rs. 20,00,000/- + GST</h5> <br> <h5><strong>EMI: </strong>Rs. 15,279(approx.)</h5> <br> <h5><strong>Address: </strong>Jahangirabad, Surat</h5> <br> <h5><strong>Property Age: </strong>Under Construction</h5> <br> <h5><strong>Furnishing: </strong>Unfurnished</h5> <br> <h5><strong>Amenities: </strong>Parking, East facing, Vitrificial Flooring, Lift, Power Backup</h5>")
       document.getElementById("property-container").appendChild(second1bhk);
     }
-    else if(x == 2200000){
+    else if(x == '22,00,000'){
       document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
       const second1bhk = document.createElement("div");
       second1bhk.id = "prop-container";
@@ -118,7 +93,7 @@ function search_value() {
     //This part added so that even if the first search result is not a part of data taken, we get the required result by implementing the remove and add functionality
     const first1bhk = document.createElement("div");
     first1bhk.id = "prop-container";
-    first1bhk.insertAdjacentHTML("afterbegin", "<h6>Sample Text</h6>")
+    first1bhk.insertAdjacentHTML("afterbegin", "<h6></h6>")
     document.getElementById("property-container").appendChild(first1bhk);
 
     document.getElementById("property-container").removeChild(document.getElementById("prop-container"));

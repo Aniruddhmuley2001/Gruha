@@ -1,3 +1,7 @@
+*{
+    scroll-behavior: smooth;
+}
+
 #front-top{
     background-image: url(./img/5TH-FLOOR_02.jpg);
     background-size: cover;
