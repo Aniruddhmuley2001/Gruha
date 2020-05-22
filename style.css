@@ -68,12 +68,13 @@ img{
     /* margin-bottom: 10%; */
     border-radius: 5px;
     text-decoration: none;
+    font-family: 'Arapey', serif;
 }
 
 .bhk1{
     background-image: url('./img/Interior-design-for-1BHK-flat_opening.webp');
     background-repeat: no-repeat;
-    background-size: cover;   
+    background-size: cover;  
 }
 
 .bhk2{
