@@ -39,26 +39,32 @@ img{
 
 #choose_bhk{
     border: 2px solid #4A372B;
-    margin: 10px;
+    /* margin: 10px; */
+    background-image: url('./img/004-wood-melamine-subttle-pattern-background-pat.jpg');
 }
 
 #choose_bhk h2{
     font-size: 3em;
-    color: #4A372B;
+    color: white;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
 }
 
 .row{
-    margin: 5px;
+    margin: 7px;
 }
+
+.animate__animated.animate__zoomIn{
+    --animate-duration: 2s;
+  }
 
 .blog-item-outer{
     border: 2px solid #4A372B;
     border-radius: 10px;
     width: 20%;
     height: 40vh;
-    margin: 35px;
+    margin: 40px;
     text-decoration: none;
     font-size: x-large;
     padding: 7rem;
@@ -69,6 +75,10 @@ img{
     border-radius: 5px;
     text-decoration: none;
     font-family: 'Arapey', serif;
+}
+
+.blog-item a:hover{
+    zoom: 1;
 }
 
 .bhk1{

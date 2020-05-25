@@ -74,6 +74,11 @@
     text-align: center;
 }
 
+.enter_price h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5rem;
+}
+
 #property-container{
     border: 2px solid rgb(211, 98, 28);
     border-radius: 8px;
