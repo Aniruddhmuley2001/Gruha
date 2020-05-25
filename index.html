@@ -11,44 +11,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
-    <div id="front-top">
-        <br><br>
-        <h1>Gruha</h1>
-        <br><br>
-        <div id="highlight" class="animate__animated animate__zoomIn">
-            <h3>Finding the best homes for you</h3>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#About">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  
+  <!-- Use any element to open the sidenav -->
+  <span onclick="openNav()">open</span>
+  
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div id="main">
+    ...
+  </div>
+
+  <div id="front-top">
+      <br><br>
+      <h1>Gruha</h1>
+      <br><br>
+      <div id="highlight" class="animate__animated animate__zoomIn">
+        <h3>Finding the best homes for you</h3>
+      </div>
+  </div>
+  <br>
+
+  <div id="choose_bhk" data-aos="zoom-in-up" data-aos-duration="2000">
+    <h2 style="font-family: 'Open Sans', sans-serif;">Choose the BHK type of your dream home</h2>
+    <div class="row">
+      <div class="blog-item-outer col-sm-12 col-md-3 bhk1">
+        <div class="blog-item">
+          <a href="./1-bhk/1bhk.html" style="text-decoration: none; font-size: 3.5rem; color: black;">
+            <center><strong>1-BHK</strong></center>
+          </a>
         </div>
-    </div>
-    <br>
-    <div id="choose_bhk">
-        <br>
-        <h2 style="font-family: 'Open Sans', sans-serif;">Choose the BHK type of your dream home</h2>
-        <div class="row">
-            <div class="blog-item-outer col-sm-12 col-md-3 bhk1">
-              <div class="blog-item">
-                <a href="./1-bhk/1bhk.html" style="text-decoration: none; font-size: 3.5rem; color: black;">
-                    <center><strong>1-BHK</strong></center>
-                </a>
-              </div>
-            </div>
-            <div class="blog-item-outer col-sm-12 col-md-3 bhk2">
-                <div class="blog-item">
-                  <a href="./2-bhk/2bhk.html" style="text-decoration: none; font-size: 3.5rem; color: #000000;">
-                    <center><strong>2-BHK</strong></center>
-                </a>
-                </div>
-              </div>
-            <div class="blog-item-outer col-sm-12 col-md-3 bhk3">
-                <div class="blog-item">
-                  <a href="./3-bhk/3bhk.html" style="text-decoration: none; font-size: 3.5rem; color: rgb(0, 0, 0);">
-                    <center><strong>3-BHK</strong></center>
-                </a>
-                </div>
-            </div>
-        </div>     
-    </div>
+      </div>
+
+      <div class="blog-item-outer col-sm-12 col-md-3 bhk2">
+        <div class="blog-item">
+          <a href="./2-bhk/2bhk.html" style="text-decoration: none; font-size: 3.5rem; color: #000000;">
+            <center><strong>2-BHK</strong></center>
+          </a>
+        </div>
+      </div>
+
+      <div class="blog-item-outer col-sm-12 col-md-3 bhk3">
+        <div class="blog-item">
+          <a href="./3-bhk/3bhk.html" style="text-decoration: none; font-size: 3.5rem; color: rgb(0, 0, 0);">
+            <center><strong>3-BHK</strong></center>
+          </a>
+        </div>
+      </div>
+    </div>     
+  </div>
+  <br>
+
+  <div id="About" data-aos="zoom-in-up" data-aos-duration="2000">
+    <h2>Who are we?</h2><br>
+    <h4>Gruha is an attempt to make property searching easier and efficient in times, when we are able to find only a handful
+         of homes on the internet, and are not so satisfied with the options available. Not a conventional place, where you will 
+         deal with traditional brokers and loose excess money in commissions. In the cities of our service, we try to cover each 
+         and every place, conduct surveys, and list down the best places, to help you find your ideal homes.
+    </h4>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
 </body>
 </html>
