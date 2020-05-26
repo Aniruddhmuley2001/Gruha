@@ -102,9 +102,9 @@ img{
     margin-left: 10px;
 }
 
-.row{
+/* .row{
     margin: 7px;
-}
+} */
 
 .animate__animated.animate__zoomIn{
     --animate-duration: 2s;
@@ -115,10 +115,10 @@ img{
     border-radius: 10px;
     width: 20%;
     height: 40vh;
-    margin: 40px;
+    margin: 35px;
     text-decoration: none;
     font-size: x-large;
-    padding: 7rem;
+    padding: 5rem;
 }
 
 .blog-item{
