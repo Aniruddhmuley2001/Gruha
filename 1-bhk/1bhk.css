@@ -79,6 +79,14 @@
     font-size: 5rem;
 }
 
+input{
+    border-radius: 10px;
+    width: 50%;
+    height: 3rem;
+    text-align: center;
+    border: #4A372B solid 5px;
+}
+
 #property-container{
     border: 2px solid rgb(211, 98, 28);
     border-radius: 8px;

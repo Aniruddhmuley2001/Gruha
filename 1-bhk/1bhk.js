@@ -45,13 +45,17 @@ function search_value() {
     //console.log("Element found!");
 
     //This part added so that even if the first search result is not a part of data taken, we get the required result by implementing the remove and add functionality
-    const first1bhk = document.createElement("div");
-    first1bhk.id = "prop-container";
-    first1bhk.insertAdjacentHTML("afterbegin", "<h6></h6>")
-    document.getElementById("property-container").appendChild(first1bhk);
+    // const first1bhk = document.createElement("div");
+    // first1bhk.id = "prop-container";
+    // first1bhk.insertAdjacentHTML("afterbegin", "<h6></h6>")
+    // document.getElementById("property-container").appendChild(first1bhk);
 
     if(x === '16,00,000'){
-      document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
+      // document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
+      const myNode = document.getElementById("property-container");
+      while (myNode.lastElementChild) {
+        myNode.removeChild(myNode.lastElementChild);
+      }
       const first1bhk = document.createElement("div");
       first1bhk.id = "prop-container";
       first1bhk.insertAdjacentHTML("afterbegin", 
@@ -59,7 +63,11 @@ function search_value() {
       document.getElementById("property-container").appendChild(first1bhk);
     }
     else if(x == '18,00,000'){
-      document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
+      // document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
+      const myNode = document.getElementById("property-container");
+      while (myNode.lastElementChild) {
+        myNode.removeChild(myNode.lastElementChild);
+      }
       const second1bhk = document.createElement("div");
       second1bhk.id = "prop-container";
       second1bhk.insertAdjacentHTML("afterbegin", 
@@ -67,7 +75,11 @@ function search_value() {
       document.getElementById("property-container").appendChild(second1bhk);
     }
     else if(x == '19,00,000'){
-      document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
+      //document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
+      const myNode = document.getElementById("property-container");
+      while (myNode.lastElementChild) {
+        myNode.removeChild(myNode.lastElementChild);
+      }
       const third1bhk = document.createElement("div");
       third1bhk.id = "prop-container";
       third1bhk.insertAdjacentHTML("afterbegin", 
@@ -75,7 +87,11 @@ function search_value() {
       document.getElementById("property-container").appendChild(third1bhk);
     }
     else if(x == '20,00,000'){
-      document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
+      //document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
+      const myNode = document.getElementById("property-container");
+      while (myNode.lastElementChild) {
+        myNode.removeChild(myNode.lastElementChild);
+      }
       const fourth1bhk = document.createElement("div");
       fourth1bhk.id = "prop-container";
       fourth1bhk.insertAdjacentHTML("afterbegin", 
@@ -83,7 +99,11 @@ function search_value() {
       document.getElementById("property-container").appendChild(fourth1bhk);
     }
     else if(x == '22,00,000'){
-      document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
+      //document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
+      const myNode = document.getElementById("property-container");
+      while (myNode.lastElementChild) {
+        myNode.removeChild(myNode.lastElementChild);
+      }
       const fifth1bhk = document.createElement("div");
       fifth1bhk.id = "prop-container";
       fifth1bhk.insertAdjacentHTML("afterbegin", 
