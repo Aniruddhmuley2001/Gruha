@@ -2,6 +2,10 @@
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: rgb(87, 86, 86);
+}
+
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
