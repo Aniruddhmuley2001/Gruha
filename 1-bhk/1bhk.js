@@ -38,11 +38,11 @@ let iterativeFunction = function (arr, x) {
 // Driver code 
 function search_value() {
   const price = document.querySelector("input").value;
-  let arr = ['16,00,000', '18,00,000', '19,00,000', '20,00,000', '22,00,000']; 
+  let arr = [1600000, 1800000, 1900000, 2000000, 2200000]; 
   let x = price; 
   // console.log(x);
   if (iterativeFunction(arr, x, 0, arr.length-1)) {
-    if(x === '16,00,000'){
+    if(x == 1600000){
       // document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
       const myNode = document.getElementById("property-container");
       while (myNode.lastElementChild) {
@@ -56,7 +56,7 @@ function search_value() {
       document.getElementById("property-container").appendChild(first1bhk);
     }
 
-    else if(x == '18,00,000'){
+    else if(x == 1800000){
       // document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
       const myNode = document.getElementById("property-container");
       while (myNode.lastElementChild) {
@@ -70,7 +70,7 @@ function search_value() {
       document.getElementById("property-container").appendChild(second1bhk);
     }
 
-    else if(x == '19,00,000'){
+    else if(x == 1900000){
       //document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
       const myNode = document.getElementById("property-container");
       while (myNode.lastElementChild) {
@@ -84,7 +84,7 @@ function search_value() {
       document.getElementById("property-container").appendChild(third1bhk);
     }
 
-    else if(x == '20,00,000'){
+    else if(x == 2000000){
       //document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
       const myNode = document.getElementById("property-container");
       while (myNode.lastElementChild) {
@@ -98,7 +98,7 @@ function search_value() {
       document.getElementById("property-container").appendChild(fourth1bhk);
     }
 
-    else if(x == '22,00,000'){
+    else if(x == 2200000){
       //document.getElementById("property-container").removeChild(document.getElementById("prop-container"));
       const myNode = document.getElementById("property-container");
       while (myNode.lastElementChild) {
