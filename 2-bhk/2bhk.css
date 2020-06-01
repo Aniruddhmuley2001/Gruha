@@ -4,14 +4,6 @@
     margin-left: 0%;
     margin-right: 0%;
     scroll-behavior: smooth;
-    /* background-color: rgb(243, 175, 133); */
-}
-
-body{
-    background-image: url('./003-wood-melamine-subttle-pattern-background-pat.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 /* Add a black background color to the top navigation */
@@ -71,40 +63,4 @@ body{
       display: block;
       text-align: left;
     }
-}
-
-.wrap{
-    margin: 10px;
-}
-
-.enter_price{
-    margin: 0;
-    text-align: center;
-}
-
-.enter_price h1{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 5rem;
-}
-
-input{
-    border-radius: 10px;
-    width: 50%;
-    height: 3rem;
-    text-align: center;
-    border: #4A372B solid 5px;
-    background-color: whitesmoke;
-}
-
-#property-container{
-    border: 7px solid rgb(54, 21, 1);
-    border-radius: 8px;
-    margin: 10px;
-    padding: 1.5%;
-    display: block;
-}
-
-#prop-container img{
-    position: relative;
-    display: inline-block;
 }
