@@ -194,3 +194,22 @@ img{
     color: white;
     border-radius: 14px;
 }
+
+#contact{
+    border: 2px solid #4A372B;
+    margin: 7px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(247, 168, 115);
+}
+
+#contact h2{
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    /* margin-left: 10px; */
+    background-color: #4A372B;
+    display: block;
+    color: white;
+    border-radius: 14px;
+}
