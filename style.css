@@ -165,6 +165,8 @@ img{
     border-radius: 15px;
     text-align: center;
     background-color: rgb(247, 168, 115);
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5rem;
 }
 
 #About h2{
@@ -184,6 +186,8 @@ img{
     border-radius: 15px;
     text-align: center;
     background-color: rgb(247, 168, 115);
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5rem;
 }
 
 #Concept h2{
@@ -203,6 +207,8 @@ img{
     border-radius: 15px;
     text-align: center;
     background-color: rgb(247, 168, 115);
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5rem;
 }
 
 #contact h2{
